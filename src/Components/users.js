@@ -2,14 +2,12 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../Context";
 import axios from "axios";
-import { useState } from "react";
 
 import "./components.css";
 
 function Users() {
   //using context to get the users
   let context = useContext(Context);
-  const [show, setShow] = useState(false);
 
   //to get the userid to delete
   let deleteid;
